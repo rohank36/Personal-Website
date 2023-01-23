@@ -1,0 +1,175 @@
+body{
+    background-color: #FFFFFF;
+}
+
+main{
+    /*
+    margin-left: 580px;
+    margin-right: 580px;
+    */
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: "Open Sans",sans-serif;
+    margin-top: 155px;
+    background-color: #FFFFFF;
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+}
+
+a:hover{
+    background-color: #C4C6C7;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header{
+    width:100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 6rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f0f0f0;
+    transition: all 0.4s linear;
+    font-family: "Montserrat",sans-serif;  
+}
+
+header h1{
+    font-size: 3rem;
+    padding: 1rem 1rem;
+    line-height: 1;
+    font-weight: 700;
+    /*text-shadow: 1px 1px 2px rgb(144, 139, 139);*/
+    transition: all 0.4s linear;
+    
+}
+
+header h1 a{
+    color: #000000;
+}
+
+header nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.up header{
+    min-height: 2.5rem;
+}
+
+.up header h1{
+    font-size: 1.5rem;
+    padding: 0.25rem 1rem;
+}
+
+
+.main-title{
+    /*margin-top: 140px;*/
+    font-family: "Montserrat",sans-serif;
+    display:flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding-bottom: 0px;
+}
+
+.main-title .title{
+    margin-bottom: 0px;
+    color:#000000;
+}
+.main-title .description{
+    margin-top: 30px;
+}
+
+.main-separator{
+    height: .5px;
+    background: #000000;
+}
+
+#quotes .quote-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects #prev-projects{
+    margin-left: 50px;
+}
+
+.exp-container{
+    margin-left: 50px;
+}
+
+.project-description{
+    font-size: 14px;
+}
+
+.project-name{
+    text-decoration: underline;
+    margin-bottom: 0;
+}
+
+.skill-text{
+    margin-left: 50px;
+}
+
+.label h2{
+    background-color: #f0f0f0;
+    border-radius: 2%;
+    font-family: "Montserrat",sans-serif;
+}
+
+.exp-details{
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.images{
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    /*width: 70%;*/
+    height: auto;
+    margin-top: 25px;
+}
+
+.image-caption{
+    text-align: center;
+    font-size: 11.5px;
+    margin-bottom: 30px;
+}
+
+.main-title img{
+    width: 15%;
+    height: auto;
+    float:left;
+}
+
+img{
+    border-radius: 2%;
+}
+
+.connect-info{
+    text-align: center;
+    column-count:2;
+    column-width: 50px;
+    column-gap: 30px;
+}
+.connect-info p{
+    Display: inline-block;    
+}
+
+.connect-info img{
+    width: 6.5%;
+    height: auto;
+    vertical-align: middle;
+    border-radius: 2%;
+}
+
