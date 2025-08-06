@@ -1,55 +1,50 @@
-body{
-    background-color: #FFFFFF;
+/* Use the border-box model for more intuitive sizing */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-main{
-    /*
-    margin-left: 580px;
-    margin-right: 580px;
-    */
-    margin-left: 25%;
-    margin-right: 25%;
-    font-family: "Open Sans",sans-serif;
-    margin-top: 155px;
-    background-color: #FFFFFF;
+body {
+  /* These rules keep the <main> block centered on the page */
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center;    /* Center vertically */
+  
+  /* Base styles */
+  background-color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
 }
 
-html{
-    scroll-behavior: smooth;
-    scroll-padding-top: 6.5rem;
+main {
+  /* Optional: Add some padding so content isn't right at the edge */
+  padding: 2rem;
+  
+  /* Optional: Set a max-width for better readability on large screens */
+  max-width: 900px; 
+  
+  /* --- THIS IS THE CHANGE --- */
+  /* Aligns all the text and links inside this container to the left */
+  text-align: left;
 }
 
-
-header{
-    width:100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    min-height: 6rem;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: #f0f0f0;
-    transition: all 0.4s linear;
-    font-family: "Montserrat",sans-serif;  
+/* Style the links to make them look cleaner */
+a {
+    color: #007BFF;
+    text-decoration: none;
+    margin: 0 8px 0 0; /* Adjust margin for left-alignment */
+    transition: color 0.3s ease;
 }
 
-header h1{
-    font-size: 3rem;
-    padding: 1rem 1rem;
-    line-height: 1;
-    font-weight: 700;
-    /*text-shadow: 1px 1px 2px rgb(144, 139, 139);*/
-    transition: all 0.4s linear;
-    
+/* Give the first link no left margin */
+a:first-of-type {
+    margin-left: 0;
 }
 
-header h1 a{
-    color: #000000;
+a:hover {
+    color: #0056b3;
+    text-decoration: underline;
 }
-
-header nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-
